@@ -1,0 +1,22 @@
+{
+  "name": "Boton redirect",
+  "version": "1.0",
+  "manifest_version": 2,
+
+  "description": "Boton para redireccionar a un link específico",
+
+  "permissions": [ "storage" ],
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["boton.js"]
+  }
+]
+}
